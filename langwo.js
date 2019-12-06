@@ -24,7 +24,9 @@ $("#subtitle_chooser").click(function(){
 });
 $("#start_video").click(function(){
   if(video !== undefined && subtitle !== undefined){
-    startProgram(video, subtitle, document.getElementById("lang_chooser").value);
+    lang = undefined;
+    if(document.getElementById("lang_chooser").value=="tr")lang="tr";
+    startProgram(video, subtitle, lang);
   }
 });
 
