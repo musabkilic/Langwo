@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+    const dialog = require('electron').remote.dialog;
+
+    window.nodeRequire = require;
+    delete window.require;
+    delete window.exports;
+    delete window.module;
+    </script>
+    <link href="./video-js.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <script src="./video.min.js"></script>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+  <div id="loader">
+    <center>
+      <h1>Welcome!</h1>
+      <h2>Step 1: Choose a media file<span id="tick0" hidden>✔️</span></h2>
+      <button id="media_chooser" class="button">Click on me to choose a video!</button>
+      <h2>Step 2: Choose a subtitle file<span id="tick1" hidden>✔️</span></h2>
+      <button id="subtitle_chooser" class="button">Click on me to choose a subtitle!</button>
+      <h2>Step 3: Choose your subtitle language<span id="tick2" hidden>✔️</span></h2>
+      <select id="lang_chooser" class="button">
+       <option value="ot">Other(Wiktionary)</option>
+       <option value="tr">Türkçe(Tureng)</option>
+      </select>
+    </br></br></br></br></br></br></br></br>
+      <button id="start_video" class="button" style="background-color:grey">Start Video</button>
+    </center>
+  </div>
+  <video
+  id="my-player"
+  class="video-js vjs-big-play-centered"
+  preload="auto"
+  controls>
+  </video>
+  <script src="./langwo.js"></script>
+  </body>
+</html>

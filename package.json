@@ -1,0 +1,19 @@
+{
+  "name": "langwo",
+  "version": "1.0.0",
+  "description": "\"[Winnerstrack][Side task] GUI Application for foreign language learners\" Task for Google Code-In 2019",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/musabkilic/Langwo",
+  "keywords": [
+    "Electron",
+    "GCI",
+    "VideoJS"
+  ],
+  "author": "Musab Kılıç",
+  "devDependencies": {
+    "electron": "^7.1.2"
+  }
+}
