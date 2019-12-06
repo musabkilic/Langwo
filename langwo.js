@@ -115,8 +115,8 @@ function startProgram(video, subtitle, lang){
                       word_lookup.style.top = "50px";
                       word_lookup.style.height = elY0-50+"px";
                       let new_src;
-                      if(lang == "ot")new_src = "https://en.wiktionary.org/w/index.php?title="+word.text()+"&printable=yes";
-                      else if(lang == "tr")new_src = "https://tureng.com/tr/turkce-ingilizce/"+word.text();
+                      if(lang == "tr")new_src = "https://tureng.com/tr/turkce-ingilizce/"+word.text();
+                      else new_src = "https://en.wiktionary.org/w/index.php?title="+word.text()+"&printable=yes";
 
                       if(new_src != word_lookup.src){
                         word_lookup.src = new_src;
